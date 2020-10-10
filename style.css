@@ -1,0 +1,62 @@
+body {
+  color: #515151; 
+}
+
+.element {
+  width: 300px;
+  height: 360px;
+  background-color: #F7d233;
+  border-radius: 50%;
+  position: relative;
+}
+
+.count {
+  font-family: 'Dotum';
+  /* border: solid #a5a0a0; */
+  color: #515151;
+  position: absolute;
+  top: 70px;
+  right: 45px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.8rem;
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+button {
+  font-size: 30px;
+  color: #515151;
+  background-color: white;
+  border: solid #515151;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  box-shadow: 0 5px 0 #515151;
+  outline: none;
+}
+
+button:active {
+  transform: translate3d(0,4px,0);
+  box-shadow: none;
+}
+
+.btn1 {
+  position: absolute;
+  top: 170px;
+  left: 30px;
+}
+
+.btn2 {
+  position: absolute;
+  top: 170px;
+  right: 40px;
+}
+
+.btn3 {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+}
