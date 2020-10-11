@@ -72,7 +72,7 @@ $(() => {
   
     //ボタンを押したらカウントダウンスタート
     start.on('click', () => {
-      // stopCount();
+      stopCount();
       timeLeft = poseTime;
       console.log(poseTime);
       console.log(timeLeft);
