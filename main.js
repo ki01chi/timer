@@ -13,6 +13,12 @@ $(() => {
     let timeLeft = setTime;
     //setIntervalのための変数
     let testTimer;
+
+    class KitchenTimer {
+      constructor(name) {
+      }
+
+    }
   
   
     //ミリ秒を分に変換________________________________________
