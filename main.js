@@ -20,7 +20,24 @@ $(() => {
 
     }
   
+  //ミリ秒を分に変換________________________________________
+    // function computeDuration(ms){
+    //   let h = String(Math.floor(ms / 3600000) + 100).substring(1);
+    //   console.log(String(Math.floor(ms / 3600000) + 100).substring(1));
 
+    //   let m = String(Math.floor((ms - 0 * 3600000)/60000)+ 100).substring(2);
+
+    //   console.log(String(Math.floor((ms - 0 * 3600000)/60000)+ 100).substring(2));
+
+    //   let s = String(Math.round((ms - 0 * 3600000 - m * 60000)/1000)+ 100).substring(1);
+
+    //   console.log(String(Math.round((ms - 0 * 3600000 - m * 60000)/1000)+ 100).substring(1))
+
+    //   return m + ':' + s;
+    // }
+
+    // let compute = computeDuration(360000);
+    //__________________________________________________________
   
     //残りの秒数を表示する関数
     const displayText = () => {
