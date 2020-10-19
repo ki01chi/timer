@@ -2,6 +2,28 @@ body {
   color: #515151; 
 }
 
+.count{
+  display: none;
+  }
+
+h1 {
+  margin:0;
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #28CECE;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .element {
   width: 300px;
   height: 360px;
@@ -10,9 +32,8 @@ body {
   position: relative;
 }
 
-.count {
+.display {
   font-family: 'Dotum';
-  /* border: solid #a5a0a0; */
   color: #515151;
   position: absolute;
   top: 70px;
@@ -43,19 +64,19 @@ button:active {
   box-shadow: none;
 }
 
-.btn1 {
+.start-btn {
   position: absolute;
   top: 170px;
   left: 30px;
 }
 
-.btn2 {
+.stop-btn {
   position: absolute;
   top: 170px;
   right: 40px;
 }
 
-.btn3 {
+.reset-btn {
   position: absolute;
   top: 250px;
   right: 100px;
