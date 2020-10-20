@@ -8,6 +8,7 @@ $(() => {
     const display = $(this).children('.display');
     //タイマーの秒数
     let setTime = $(this).children(".count").data("time");
+    console.log(setTime);
     //一時停止した時の秒数
     let poseTime = setTime;
     //残りの秒数
