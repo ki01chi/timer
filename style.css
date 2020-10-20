@@ -1,0 +1,83 @@
+body {
+  color: #515151; 
+}
+
+.count{
+  display: none;
+  }
+
+h1 {
+  margin:0;
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #28CECE;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element {
+  width: 300px;
+  height: 360px;
+  background-color: #F7d233;
+  border-radius: 50%;
+  position: relative;
+}
+
+.display {
+  font-family: 'Dotum';
+  color: #515151;
+  position: absolute;
+  top: 70px;
+  right: 45px;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.8rem;
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+button {
+  font-size: 30px;
+  color: #515151;
+  background-color: white;
+  border: solid #515151;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  box-shadow: 0 5px 0 #515151;
+  outline: none;
+}
+
+button:active {
+  transform: translate3d(0,4px,0);
+  box-shadow: none;
+}
+
+.start-btn {
+  position: absolute;
+  top: 170px;
+  left: 30px;
+}
+
+.stop-btn {
+  position: absolute;
+  top: 170px;
+  right: 40px;
+}
+
+.reset-btn {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+}
