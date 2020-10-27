@@ -6,6 +6,7 @@ $(() => {
     const stop = $(this).children('.stop-btn');
     const reset = $(this).children('.reset-btn');
     const display = $(this).children('.display');
+    
     //タイマーの秒数
     let setTime = $(this).children(".count").data("time");
     console.log(setTime);
