@@ -1,6 +1,6 @@
 $(() => {
 
-  $(".element").each(function () {
+  $('.element').each(function () {
     const countBox = $(this).children('.count');
     const start = $(this).children('.start-btn');
     const stop = $(this).children('.stop-btn');
@@ -8,21 +8,20 @@ $(() => {
     const display = $(this).children('.display');
     
     //タイマーの秒数
-    let setTime = $(this).children(".count").data("time");
-    console.log(setTime);
+    let setTime = countBox.data('time');
     //一時停止した時の秒数
     let poseTime = setTime;
     //残りの秒数
     let timeLeft = setTime;
     //setIntervalのための変数
     let testTimer;
-
+    //分を表示する
     let minutes;
+    //秒を表示する
     let seconds;
 
     //残りの秒数を表示する関数
     const displayText = () => {
-      countBox.text(timeLeft);
       minutes = Math.floor(timeLeft / 60);
       seconds = timeLeft % 60;
       if (String(minutes).length == 1)
@@ -53,6 +52,7 @@ $(() => {
     };
 
     displayText();
+
     //ボタンを押したらカウントダウンスタート
     start.on('click', () => {
       stopCount();
