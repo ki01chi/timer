@@ -9,8 +9,6 @@ $(() => {
     
     //タイマーの秒数
     let setTime = countBox.data('time');
-    //一時停止した時の秒数
-    let poseTime = setTime;
     //残りの秒数
     let timeLeft = setTime;
     //setIntervalのための変数
@@ -33,7 +31,6 @@ $(() => {
     //1ずつカウントダウンする関数
     const countDown = () => {
       timeLeft--;
-      poseTime = timeLeft;
       displayText();
     };
     //カウントをストップする関数
@@ -44,20 +41,17 @@ $(() => {
     const timerStart = () => {
       testTimer = setInterval(function () {
         if (timeLeft <= 0)
-          clearInterval(testTimer);
+        stopCount();
         else
-          countDown();
+        countDown();
       }, 1000);
       return;
     };
-
-    displayText();
-
+    
+    
     //ボタンを押したらカウントダウンスタート
     start.on('click', () => {
       stopCount();
-      timeLeft = poseTime;
-      displayText();
       timerStart();
     });
     //ボタンを押したらカウントストップ
@@ -67,8 +61,10 @@ $(() => {
     //ボタンを押したらカウントリセット
     reset.on('click', () => {
       stopCount();
-      timeLeft = poseTime = setTime;
+      timeLeft = setTime;
       displayText();
     });
+
+    displayText();
   })
 });
